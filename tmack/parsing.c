@@ -6,7 +6,7 @@
 /*   By: juschaef <juschaef@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/28 17:33:43 by juschaef          #+#    #+#             */
-/*   Updated: 2016/06/05 12:07:46 by tmack            ###   ########.fr       */
+/*   Updated: 2016/06/06 07:00:17 by tmack            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ t_point		**create_map(t_win *win)
 	return (grid);
 }
 
-t_point     ft_create_point(char *str, int x, int y)
+t_point		ft_create_point(char *str, int x, int y)
 {
 	t_point point;
 

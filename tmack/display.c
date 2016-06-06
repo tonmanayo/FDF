@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   display.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmack <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/06/05 15:25:13 by tmack             #+#    #+#             */
-/*   Updated: 2016/06/05 15:25:19 by tmack            ###   ########.fr       */
+/*   Created: 2016/06/05 15:24:03 by tmack             #+#    #+#             */
+/*   Updated: 2016/06/06 06:54:17 by tmack            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-int		main(int argc, char **argv)
+void	put_info_to_windows(t_win *win)
 {
-	t_win	win;
+	put_black_screen(win);
+}
 
-	win.path = argv[1];
-	if (argc > 1 && argc < 3)
+void	put_black_screen(t_win *win)
+{
+	int i;
+	int j;
+
+	j = 0;
+	while (j < 200)
 	{
-		ft_import_map(&win);
+		i = 1680;
+		while (i < WIN_W)
+		{
+			mlx_pixel_put(win->init, win->win, i, j, 0x000000);
+			i++;
+		}
+		j++;
 	}
-	else
-		ft_putstr("Inser map here !");
-	return (0);
 }

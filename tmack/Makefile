@@ -6,7 +6,6 @@ SRC = main.c		\
 	  parsing.c		\
 	  utils.c		\
 	  zoom_option.c	\
-	  move_option.c	\
 	  rotate.c		\
 	  display.c		\
 	  pike.c		\

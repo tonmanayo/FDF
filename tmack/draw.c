@@ -6,7 +6,7 @@
 /*   By: tmack <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/05 15:24:17 by tmack             #+#    #+#             */
-/*   Updated: 2016/06/05 15:38:05 by tmack            ###   ########.fr       */
+/*   Updated: 2016/06/06 06:55:20 by tmack            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,9 +83,11 @@ int			choose_colour(int p1, int p2, int max)
 	else
 		return (BROWN);
 }
+
 /*
 ** bresenhams line drawing function calc
 */
+
 t_bres		*bres_construct(t_point *p1, t_point *p2, int max)
 {
 	t_bres *bres;

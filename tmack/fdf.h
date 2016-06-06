@@ -6,7 +6,7 @@
 /*   By: tmack <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/05 15:24:33 by tmack             #+#    #+#             */
-/*   Updated: 2016/06/05 15:24:38 by tmack            ###   ########.fr       */
+/*   Updated: 2016/06/06 06:56:10 by tmack            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ typedef struct	s_rotate_point
 	float		px;
 	float		py;
 	float		pz;
-}			t_rp;
+}				t_rp;
 
 int				count_map_length(char **str);
 int				len_tab(char *argv);

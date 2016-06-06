@@ -6,7 +6,7 @@
 /*   By: tmack <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/05 15:24:51 by tmack             #+#    #+#             */
-/*   Updated: 2016/06/05 15:24:53 by tmack            ###   ########.fr       */
+/*   Updated: 2016/06/06 06:57:19 by tmack            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int		expose_hook(t_win *win)
 {
-		calcule_coord(win);
-		mlx_put_image_to_window(win->init, win->win, win->img, 0, 0);
+	calcule_coord(win);
+	mlx_put_image_to_window(win->init, win->win, win->img, 0, 0);
 	return (0);
 }
 
@@ -36,6 +36,6 @@ int		key_hook(int keycode, t_win *win)
 	if (keycode == 1)
 		decrease_pike(win);
 	ft_putstr(ft_itoa(keycode));
-		ft_putchar('\n');
+	ft_putchar('\n');
 	return (0);
 }
